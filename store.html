@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MTCS Supply – Tools &amp; Equipment for House Care Pros</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f4f6fa;--surf:#fff;--ink:#101a36;--mute:#4a5575;--navy:#14224a;--gold:#c8901a;--goldl:#f0c04a;--line:#d5dae6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1330;--surf:#14224a;--ink:#f4f6fa;--mute:#b4bdd6;--line:#2b3b6e;--gold:#f0c04a}}
+:root[data-theme="dark"]{--bg:#0b1330;--surf:#14224a;--ink:#f4f6fa;--mute:#b4bdd6;--line:#2b3b6e;--gold:#f0c04a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;font-weight:800;line-height:1.05;margin:0 0 .4em}
+h1{font-size:clamp(2.4rem,8vw,4.2rem)}h2{font-size:clamp(1.8rem,5vw,2.5rem)}h3{font-size:1.3rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{background:var(--navy);color:#f4f6fa;position:sticky;top:0;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
+.logo{font:800 1.5rem "Barlow Condensed";letter-spacing:.02em}.logo b{color:var(--goldl)}
+.btn{display:inline-block;background:linear-gradient(#f0c04a,#c8901a);color:#14224a;font:600 1rem Barlow,sans-serif;padding:12px 22px;border:0;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn.sm{padding:8px 14px;font-size:.9rem}
+.btn.ghost{background:none;border:2px solid var(--gold);color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--goldl);outline-offset:2px}
+.hero{background:var(--navy);color:#f4f6fa;padding:36px 0 44px;border-bottom:6px solid var(--gold)}
+.hero p{max-width:560px;color:#cdd5ea;font-size:1.1rem}
+section{padding:44px 0}
+.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:16px}
+.filters button{flex:0 0 auto;padding:9px 15px;border:2px solid var(--gold);background:none;color:var(--ink);border-radius:5px;font:600 .92rem Barlow;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--gold);color:#14224a}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.p{background:var(--surf);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.p .img{height:110px;background:linear-gradient(135deg,#14224a,#2b3b6e);display:grid;place-items:center;font:800 2.6rem "Barlow Condensed";color:var(--goldl)}
+.p .b{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.p small{color:var(--mute)}.p .price{font:800 1.4rem "Barlow Condensed";margin-top:auto}
+.tag{align-self:flex-start;font-size:.78rem;font-weight:600;background:var(--goldl);color:#14224a;padding:2px 8px;border-radius:3px}
+.two{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box{background:var(--surf);border:1px solid var(--line);border-left:5px solid var(--gold);padding:18px 20px;border-radius:4px}
+.box p{color:var(--mute);margin:.3em 0}
+form{display:grid;gap:10px}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:5px;background:var(--surf);color:var(--ink);font:inherit}
+.note{display:none;padding:12px;border-left:5px solid #2e9d5b;background:var(--surf);margin-top:10px}
+#cart{position:fixed;right:0;top:0;bottom:0;width:min(380px,100%);background:var(--surf);border-left:3px solid var(--gold);padding:calc(18px + env(safe-area-inset-top,0px)) 18px calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(100%);transition:transform .25s;z-index:10;overflow:auto}
+#cart.open{transform:none}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.row button{background:none;border:1px solid var(--line);color:var(--ink);border-radius:4px;padding:4px 10px;cursor:pointer}
+footer{padding:26px 20px;text-align:center;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){#cart{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="index.html" style="color:inherit;text-decoration:none" aria-label="Back to main site">MTCS <b>SUPPLY</b></a><button class="btn sm" id="open" aria-label="Open cart">Cart (<span id="cnt">0</span>)</button></div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Tools that do the job.</h1>
+<p>Pro-grade equipment for pressure washing, landscaping, snow removal, gutters, AV and interior work. Buy it, or commission exactly what you need.</p>
+<p><a class="btn" href="#shop">Shop equipment</a> <a class="btn ghost" style="color:#f4f6fa" href="#commission">Commission an item</a></p>
+</div></div>
+
+<section id="shop"><div class="wrap">
+<h2>Shop equipment</h2>
+<div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+<div class="grid" id="grid"></div>
+<p style="color:var(--mute);margin-top:14px">Sample products and prices. Replace them with your real inventory.</p>
+</div></section>
+
+<section style="background:var(--surf)" id="commission"><div class="wrap">
+<h2>Commission &amp; consign</h2>
+<div class="two">
+<div class="box"><h3>Commission an item</h3><p>Need a specific machine, a custom-built kit, or a hard-to-find part? We source it, quote it, and deliver it. You pay a deposit, we handle the rest.</p>
+<form id="cf">
+<input name="n" placeholder="Name" required autocomplete="name">
+<input name="e" type="email" placeholder="Email" required autocomplete="email">
+<select name="t"><option>Source a specific tool</option><option>Custom-built kit</option><option>Consign my equipment (sell for me)</option></select>
+<textarea name="d" rows="3" placeholder="Brand, model, budget, or details" required></textarea>
+<button class="btn" type="submit">Request a quote</button>
+</form><div class="note" id="cn" role="status">Request received. We’ll email your quote within two business days.</div></div>
+<div class="box"><h3>How it works</h3><p><b>Commission:</b> you describe it, we quote it, you approve with a deposit, we deliver and balance on delivery.</p><p><b>Consign:</b> you list used equipment with us, we photograph, price and sell it, and you keep the sale price minus our commission (for example 15%).</p><p><b>Contractors:</b> ask about bulk and recurring pricing.</p></div>
+</div></div></section>
+
+<footer>© 2026 MTCS Inc – God’s Estate. Licensed &amp; insured.</footer>
+
+<aside id="cart" aria-label="Shopping cart"><div class="row" style="border:0"><h3 style="margin:0">Your cart</h3><button id="close">Close</button></div><div id="items"></div>
+<div class="row"><b>Total</b><b id="tot">$0</b></div>
+<button class="btn" style="width:100%;margin-top:12px" id="co">Checkout</button>
+<div class="note" id="con" role="status">Checkout needs a payment processor such as Shopify, Square or Stripe. Connect one to take real orders.</div></aside>
+
+<script>
+var P=[
+["Pro 3200 PSI Pressure Washer","Pressure washing",489,"P"],["Surface Cleaner 20in","Pressure washing",179,"P"],["Pressure Hose 50ft","Pressure washing",69,"P"],
+["Telescoping Gutter Wand","Gutters",59,"G"],["Gutter Scoop Set","Gutters",24,"G"],["Extension Ladder 24ft","Gutters",229,"G"],
+["Battery Hedge Trimmer","Landscaping",149,"L"],["Commercial Backpack Blower","Landscaping",299,"L"],["Pro Edger","Landscaping",189,"L"],
+["Heavy-Duty Snow Shovel","Snow removal",39,"S"],["Walk-Behind Snow Blower","Snow removal",649,"S"],["Ice Melt 50lb","Snow removal",34,"S"],
+["Wall Mount Install Kit","AV & home tech",79,"A"],["Cable Fish Tool Set","AV & home tech",45,"A"],["Laser Distance Measure","Contractor tools",59,"C"],["Impact Driver Kit","Contractor tools",199,"C"],
+["Curved Topiary Shears","Topiary",54,"T"],["Precision Hedge Shears","Topiary",79,"T"],["Long-Reach Hedge Trimmer","Topiary",259,"T"],
+["Sphere Shaping Frame","Topiary",89,"T"],["Spiral Shaping Frame","Topiary",119,"T"],["Pruning Saw","Topiary",42,"T"]];
+var cats=["All"].concat(P.map(function(x){return x[1]}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var cur="All",cart={};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function drawF(){var f=document.getElementById("filters");f.innerHTML="";cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;b.setAttribute("aria-pressed",c===cur);b.onclick=function(){cur=c;drawF();drawG()};f.appendChild(b)})}
+function drawG(){var g=document.getElementById("grid");g.innerHTML="";P.forEach(function(x,i){if(cur!=="All"&&x[1]!==cur)return;var d=document.createElement("div");d.className="p";
+d.innerHTML='<div class="img" aria-hidden="true">'+x[3]+'</div><div class="b"><span class="tag">'+esc(x[1])+'</span><h3>'+esc(x[0])+'</h3><span class="price">$'+x[2]+'</span><button class="btn sm">Add to cart</button></div>';
+d.querySelector("button").onclick=function(){cart[i]=(cart[i]||0)+1;drawC();open_()};g.appendChild(d)})}
+function drawC(){var it=document.getElementById("items"),n=0,t=0;it.innerHTML="";
+Object.keys(cart).forEach(function(k){var q=cart[k],x=P[k];n+=q;t+=q*x[2];var r=document.createElement("div");r.className="row";
+r.innerHTML='<span>'+esc(x[0])+'<br><small>$'+x[2]+' × '+q+'</small></span><button aria-label="Remove one">−</button>';
+r.querySelector("button").onclick=function(){cart[k]--;if(!cart[k])delete cart[k];drawC()};it.appendChild(r)});
+if(!n)it.innerHTML='<p style="color:var(--mute)">Your cart is empty. Add a tool to get started.</p>';
+document.getElementById("cnt").textContent=n;document.getElementById("tot").textContent="$"+t}
+function open_(){document.getElementById("cart").classList.add("open")}
+document.getElementById("open").onclick=open_;
+document.getElementById("close").onclick=function(){document.getElementById("cart").classList.remove("open")};
+document.getElementById("co").onclick=function(){document.getElementById("con").style.display="block"};
+document.getElementById("cf").onsubmit=function(e){e.preventDefault();this.style.display="none";document.getElementById("cn").style.display="block"};
+drawF();drawG();drawC();
+</script>
+</body>
+</html>
