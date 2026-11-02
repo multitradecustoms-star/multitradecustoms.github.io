@@ -1,7 +1,14 @@
+<a href="<a<script async src="https://js.stripe.com/v3/buy-button.js"> </script>
 
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
 
-
-
+<stripe-buy-button
+  buy-button-id="buy_btn_1UXJOBBpFj1UAw0Kn2ggnOg4"
+  publishable-key="pk_live_51Ssi5vBpFj1UAw0KISa3R46AGkCSoslxGPfpm8Uw25HN5u2Ya2dJyZtk3FKtfHSkHv382WdvSkELytJUb5xtXXHZ00hPvhSsTz"
+>
+</stripe-buy-button></a>
 <img width="810" height="1200" alt="poster-ascension-v2-1200" src="https://github.com/user-attachments/assets/fb4821c0-0b8f-40ec-bb98-d372b6a11b8b" />
 # multitradecustoms.github.io
 Multi Trade Customs Services Website
