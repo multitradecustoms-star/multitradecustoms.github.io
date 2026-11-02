@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTCS Inc. - God's Estate | For Zanaiah Kenlock 2006-2024</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B122C;--navy2:#121B36;--gold:#E8B84B;--gold2:#C99A2E;--blue:#595E91;--light:#EFEEEE;--muted:#BCA89C}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--light);font-family:'Inter',sans-serif;line-height:1.75}
+.frame{border:3px solid var(--gold);margin:14px}
+header{padding:50px 20px 20px;text-align:center;background:radial-gradient(ellipse at center,#1A2342 0%,var(--navy) 75%)}
+.cover{max-width:520px;width:100%;border:2px solid rgba(232,184,75,0.35);box-shadow:0 0 70px rgba(89,94,145,0.5)}
+.brand{font-family:'Bebas Neue';font-size:2.6em;letter-spacing:5px;margin:25px 0 0}
+.brand span{color:var(--gold)}
+.saying{font-family:'Bebas Neue';font-size:2em;color:var(--gold);margin:12px 0;letter-spacing:1px}
+.sub{color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-size:0.9em}
+.container{max-width:1060px;margin:0 auto;padding:28px 20px 60px}
+.verse{background:linear-gradient(135deg,var(--navy2),#1E2A4A);border-left:5px solid var(--gold);border-top:1px solid rgba(232,184,75,0.2);border-right:1px solid rgba(232,184,75,0.2);border-bottom:1px solid rgba(232,184,75,0.2);padding:26px;border-radius:2px;margin:32px 0}
+.verse h3{margin:0 0 10px;color:var(--gold);font-family:'Bebas Neue';letter-spacing:2px;font-size:1.6em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:32px 0}
+.btn{display:inline-block;padding:15px 30px;text-decoration:none;font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:0.85em;border:2px solid transparent;transition:.2s}
+.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 10px 30px rgba(232,184,75,0.35)}
+.btn-outline{border-color:var(--gold);color:var(--gold);background:transparent}.btn-outline:hover{background:var(--gold);color:var(--navy)}
+.btn-blue{border-color:var(--blue);color:var(--light);background:transparent}.btn-blue:hover{background:var(--blue)}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:30px 0}
+.t-card{background:rgba(255,255,255,0.04);border:1px solid rgba(232,184,75,0.18);padding:0;overflow:hidden;border-radius:2px}
+.t-card img{width:100%;height:340px;object-fit:cover;display:block}
+.t-card .cap{padding:14px 16px}
+.t-card .cap h4{margin:0 0 4px;font-family:'Bebas Neue';letter-spacing:1px;color:var(--gold);font-size:1.2em}
+.t-card .cap p{margin:0;color:#C8C8D8;font-size:0.88em}
+.memorial{border:2px solid var(--gold);background:linear-gradient(135deg,#0E152E,#1A2342);padding:28px;text-align:center;margin:36px 0}
+.memorial h2{font-family:'Bebas Neue';font-size:2.2em;letter-spacing:3px;color:var(--gold);margin:0}
+.father-promise{border:2px solid var(--blue);background:linear-gradient(135deg,#121B36,#1F2347);padding:26px;margin:36px 0;text-align:left}
+.father-promise h3{font-family:'Bebas Neue';color:var(--gold);letter-spacing:2px;font-size:1.6em;margin:0 0 10px}
+.father-promise .lead{font-weight:700;color:var(--light);font-size:1.1em;margin-bottom:12px}
+.mission{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:24px 0}
+.m-card{background:rgba(255,255,255,0.04);border:1px solid rgba(232,184,75,0.15);padding:18px}
+.m-card h4{margin:0 0 6px;color:var(--gold);font-family:'Bebas Neue';letter-spacing:1px}
+.disclose{background:rgba(232,184,75,0.08);border:1px solid rgba(232,184,75,0.35);padding:18px;margin:28px 0;font-size:0.92em;color:var(--muted)}
+.disclose strong{color:var(--light)}
+.zelle{background:linear-gradient(135deg,#151B3A,#2A2850);border:2px solid var(--blue);padding:26px;text-align:center}
+.z-val{font-family:'Bebas Neue';font-size:1.9em;color:var(--gold);letter-spacing:1px}
+.terms{background:#0E152E;border:1px solid rgba(255,255,255,0.08);padding:28px;margin-top:36px;font-size:0.88em;color:#9A9AB8}
+.terms h2{color:var(--gold);font-family:'Bebas Neue';letter-spacing:2px}
+footer{text-align:center;padding:36px 20px;border-top:1px solid rgba(232,184,75,0.15);color:#7A7A9A;font-size:0.82em;letter-spacing:1px}
+footer a{color:var(--gold);text-decoration:none}
+hr.gold{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:40px 0}
+</style>
+</head>
+<body>
+<div class="frame">
+<header>
+<img src="ebook_cover.png" class="cover" alt="The Ascension of God's Resilience Cover">
+<div class="brand">MULTI-TRADE <span>CUSTOMS</span></div>
+<div class="saying">"He who leads the stray, will be chronicled!"</div>
+<div class="sub">The Ascension of God's Resilience — Building an Estate After Grief | MTCS Inc – God's Estate</div>
+</header>
+
+<div class="container">
+
+<div class="verse">
+<h3>📖 LUKE 15:4-7 — THE PARABLE OF THE LOST SHEEP</h3>
+<p>"Suppose one of you has a hundred sheep and loses one of them. Doesn't he leave the ninety-nine in the open country and go after the lost sheep until he finds it? And when he finds it, he joyfully puts it on his shoulders and goes home. Then he calls his friends and neighbors together and says, 'Rejoice with me; I have found my lost sheep.' I tell you that in the same way there will be more rejoicing in heaven over one sinner who repents than over ninety-nine righteous persons who do not need to repent."</p>
+<p style="color:var(--muted);font-style:italic;margin:0">Matthew 18:12 — "If a man owns a hundred sheep, and one of them wanders away, will he not leave the ninety-nine on the hills and go to look for the one that wandered off?"</p>
+</div>
+
+<div class="memorial">
+<h2>IN LOVING MEMORY OF ZANAIAH KENLOCK</h2>
+<p style="letter-spacing:3px;color:var(--muted);margin:6px 0">12/22/2006 — 08/28/2024 | 17 YEARS | FOREVER A DIAMOND</p>
+<p>On Sunday, August 25, 2024, Zanaiah was in a horrific accident on Pelham Parkway, Bronx — where her friend died on scene. She sustained two broken arms, both legs broken, punctured/collapsed lung, lacerated liver and kidneys, and fought at Jacobi Medical Center. She passed August 28, 2024, three days later. While we fought for her life, an unauthorized GoFundMe was opened in her name without parental oversight and without transparent accounting. This official fund is from her father — with full accountability.</p>
+</div>
+
+<h2 style="font-family:'Bebas Neue';color:var(--gold);letter-spacing:2px;font-size:1.8em;text-align:center;margin-top:10px;">ZANAIAH'S JOURNEY — YOUNG TO FOREVER 17</h2>
+<p style="text-align:center;color:var(--muted);margin-top:0">From toddler holding dad's hand, to Grandpa's little girl, to family pajama nights, to sweet 16, to forever 17.</p>
+
+<div class="timeline">
+<div class="t-card"><img src="zanaiah_toddler.jpg" alt="Zanaiah toddler"><div class="cap"><h4>THE BEGINNING — HOLDING DAD'S HAND</h4><p>Toddler years — first steps, learning to walk with father.</p></div></div>
+<div class="t-card"><img src="zanaiah_diamonds.jpg" alt="Diamonds Are Forever"><div class="cap"><h4>DIAMONDS ARE FOREVER</h4><p>Young Naiah — "Zanaiah For Eternity" — forever a diamond.</p></div></div>
+<div class="t-card"><img src="grandpa_naiah.jpg" alt="Grandpa and Naiah"><div class="cap"><h4>GRANDPA & NAIAH — THE FOUNDATION</h4><p>Grandpa (Aug 29, 2023) and Naiah — the two losses that built this estate.</p></div></div>
+<div class="t-card"><img src="family_plaid.jpg" alt="Family plaid"><div class="cap"><h4>FAMILY ESTATE — PLAID NIGHTS</h4><p>Family in matching red/black plaid — unity. Zanaiah, right side, red hair.</p></div></div>
+<div class="t-card"><img src="zanaiah_16.jpg" alt="16th birthday"><div class="cap"><h4>SWEET 16</h4><p>16th birthday — her last birthday with us. Balloons, cake, dreams.</p></div></div>
+<div class="t-card"><img src="forever_zanaiah.jpg" alt="Forever Zanaiah"><div class="cap"><h4>FOREVER ZANAIAH — 12/22/2006 - 08/28/2024</h4><p>Teen to woman — 17 years of light.</p></div></div>
+</div>
+
+<div class="t-card" style="max-width:520px;margin:20px auto"><img src="memory_zanaiah.jpg" alt="In Loving Memory" style="height:540px"><div class="cap"><h4>IN LOVING MEMORY — 2006-2024</h4><p>Prom photo at sunset — holding flowers, golden dress. She is chronicled forever.</p></div></div>
+
+<div class="father-promise">
+<h3>A FATHER'S PROMISE — I PAID FOR MY DAUGHTER'S FUNERAL OUT OF POCKET</h3>
+<p class="lead">I paid for Zanaiah's funeral out of pocket — from my income working security at the hospital.</p>
+<p>After a two-year fight for wrongful death litigation, I was only reimbursed for what I paid for the initial funeral — nothing more. I have never and will never look at my child as a means to gain financial support.</p>
+<p>This is me rectifying my pain, my grief, and my struggle with the little we have left — to build something bigger than a tragedy. So that Zanaiah's legacy didn't just die on that highway pavement on Pelham Parkway.</p>
+<p style="margin-bottom:0;color:var(--gold);font-weight:700">Her name will not be remembered for how she died on Pelham Parkway, but for how many lives she saved after.</p>
+</div>
+
+<div class="btns">
+<a href="https://www.gofundme.com/f/YOUR-GOFUNDME-LINK-HERE" target="_blank" class="btn btn-gold">❤ Donate on Official GoFundMe</a>
+<a href="https://www.givebutter.com/c/YOUR-GIVEBUTTER-LINK" target="_blank" class="btn btn-gold">Givebutter — Card / PayPal / Venmo / Bank</a>
+<a href="#zelle" class="btn btn-blue">Direct via Zelle — Zero Fees</a>
+</div>
+
+<div class="disclose">
+<strong style="color:var(--gold)">TRANSPARENCY — USE OF FUNDS (20% / 80%):</strong><br>
+Goal: <strong>$250,000+</strong> — 20% ($50k of $250k) legally forms 501(c)(3) nonprofit in Zanaiah's name (attorney, CPA, state, IRS 1023). 80% seeds mission programs directly and sustains operations while pending. Quarterly accounting at multitradecustoms.com<br><br>
+<strong>REFERENCE TO PREVIOUS UNAUTHORIZED FUND:</strong> Original fundraiser "Paying Tribute to Zanaiah" by Elizabeth Figueroa ($30k goal) after Pelham Parkway accident 8/25/24: https://www.gofundme.com/f/rally-for-zanaiah-aid-her-fight-and-recovery — Opened without parental authorization, no transparent accounting to father. This official fund is managed solely by father MattLock with full accounting via future nonprofit board.
+</div>
+
+<h2 style="font-family:'Bebas Neue';color:var(--gold);letter-spacing:2px;font-size:1.7em;text-align:center;">WHAT THE ESTATE WILL BUILD IN HER NAME</h2>
+<div class="mission">
+<div class="m-card"><h4>⛪ CHURCH RENOVATIONS</h4><p>Repairs & restoration for small churches via multi-trade volunteer + low-cost labor.</p></div>
+<div class="m-card"><h4>🏠 HOMELESSNESS PREVENTION</h4><p>Resources, referrals, transitional housing support.</p></div>
+<div class="m-card"><h4>👴 SENIOR CARE RESOURCES</h4><p>Advocacy, home safety mods — honoring Grandpa's legacy.</p></div>
+<div class="m-card"><h4>♿ CHILDREN, DISABLED & VETERANS</h4><p>Direct support, equipment — honoring Zanaiah's compassion.</p></div>
+<div class="m-card"><h4>🔄 REHABILITATION CENTERS</h4><p>Support for facilities + individuals seeking recovery & re-entry.</p></div>
+<div class="m-card"><h4>⚖️ ATTORNEY & ADVOCATE REFERRALS</h4><p>Low-cost & pro-bono legal networks.</p></div>
+<div class="m-card"><h4>🔓 RE-ENTRY REFORMATION</h4><p>Job training, housing, mentorship for returning citizens.</p></div>
+</div>
+
+<div id="zelle" class="zelle">
+<h3 style="color:var(--gold);font-family:'Bebas Neue';letter-spacing:2px;margin-top:0;">ZELLE DIRECT + TEXT TO GIVE</h3>
+<p style="color:#B8B8D0">Memo: ZANAIAH LEGACY — GOD'S ESTATE DONATION</p>
+<div class="z-val">YOUR_ZELLE_EMAIL@example.com — (555) 555-0100</div>
+<p style="margin-top:12px;color:#B8B8D0">Text <strong style="color:var(--gold)">ZANAIAH to 53-555</strong> to donate via Givebutter</p>
+<div style="margin-top:18px"><a href="https://www.givebutter.com/c/YOUR-GIVEBUTTER-LINK" target="_blank" class="btn btn-gold">Donate — Card / PayPal / Venmo / Bank / Apple Pay</a>
+<a href="https://www.gofundme.com/f/YOUR-GOFUNDME-LINK-HERE" target="_blank" class="btn btn-blue">Official GoFundMe</a></div>
+</div>
+
+<div class="disclose" style="background:rgba(89,94,145,0.12);border-color:rgba(89,94,145,0.4)">
+<strong>Affiliate Disclosure:</strong> Resources page contains affiliate links. Commission reinvested 100% into mission. FTC disclosed.
+</div>
+
+<div class="terms">
+<h2>Terms, Privacy & Donation Agreement — Father's Official Fund</h2>
+<p><strong>Last Updated: May 13, 2026</strong></p>
+<p><strong>1. Nature:</strong> All contributions are charitable support for MTCS Inc. — God's Estate and future 501(c)(3) in memory of Zanaiah Kenlock (12/22/2006-08/28/2024). NOT tax-deductible until IRS determination. Father personally paid funeral out of pocket from hospital security income; wrongful death litigation reimbursed only initial funeral costs.</p>
+<p><strong>2. Use of Funds:</strong> Donor acknowledges 20%/80% split. Funds held in dedicated business account. Quarterly reports at multitradecustoms.com. Previous unauthorized GoFundMe is separate and not affiliated.</p>
+<p><strong>3. No Guarantee:</strong> IRS approval not guaranteed. If unsuccessful, funds used for listed charitable purposes via fiscal sponsorship.</p>
+<p><strong>4. Zelle/PayPal/Venmo:</strong> Direct person-to-person. Include email in memo for updates.</p>
+<p><strong>5. Refunds:</strong> GoFundMe per GoFundMe policy. Direct donations non-refundable except verified error within 7 days.</p>
+<p><strong>6. Contact:</strong> MTCS Inc. - God's Estate | multitradecustoms.com | [YOUR_CONTACT_EMAIL] | Father: MattLock</p>
+</div>
+
+<hr class="gold">
+<p style="text-align:center;color:var(--gold);font-family:'Bebas Neue';font-size:1.3em;letter-spacing:1px">Every building starts as a drawing. Help us draw Zanaiah's forever estate — so her legacy didn't die on the highway pavement.</p>
+
+</div>
+
+<footer>
+<p>MTCS INC. — GOD'S ESTATE | MULTI-TRADE CUSTOMS | FOR ZANAIAH KENLOCK 2006-2024<br>
+THE ASCENSION OF GOD'S RESILIENCE: Building an Estate After Grief<br>
+<a href="https://multitradecustoms.com">multitradecustoms.com</a></p>
+<p>© 2026 MTCS Inc. All Rights Reserved. | Built for the 1 — Cover illustration</p>
+</footer>
+
+</div>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+</html>
