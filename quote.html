@@ -42,15 +42,9 @@ footer a{margin:0 8px;text-decoration:none}
 <p>Fill out your contract and quote information below. Your request goes straight to MTCS, and we will reply by phone or email.</p>
 </div></section>
 <main><div class="card">
-<!-- Form service: FormSubmit forwards this form to the primary email below,
-     with a copy (CC) to the business email.
-     The first submission sends an activation email to the primary address — it must be
-     clicked once before any quote request is forwarded. After activation FormSubmit
-     also gives a random-string alias that can replace the address in the action URL. -->
-<form action="https://formsubmit.co/multitradecustoms@gmail.com" method="POST">
+<!-- Form service: Formspree (free). Submissions go to multitradecustoms@gmail.com only, per owner instruction Nov 4, 2026. -->
+<form action="https://formspree.io/f/mnppwdjb" method="POST">
 <input type="hidden" name="_subject" value="New quote request — MTCS">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_cc" value="mtcs@multitradecustoms.com">
 <input type="hidden" name="_next" value="https://multitradecustoms.com/quote-received.html">
 <label for="name">Full name *</label>
 <input id="name" name="name" placeholder="Full name" required autocomplete="name">
