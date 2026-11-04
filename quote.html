@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get Your Free Quote — MTCS Inc | God's Estate</title>
+<meta name="description" content="Fill out your contract and quote information and send a quote request to Multi Trade Custom Services.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--navy:#14224a;--gold:#c8901a;--goldl:#f0c04a;--bg:#f4f6fa;--surf:#fff;--ink:#101a36;--mute:#4a5575;--line:#d5dae6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Barlow,system-ui,sans-serif}
+a{color:inherit}header{background:var(--surf);border-bottom:1px solid var(--line)}
+.bar{max-width:960px;margin:0 auto;padding:16px 24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.logo{font-family:"Barlow Condensed",Impact,sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:.02em;text-decoration:none}
+.logo span{color:var(--gold)}nav{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;font-size:.95rem}
+nav a{text-decoration:none}nav a:hover{color:var(--gold)}
+.hero{background:var(--navy);color:#f4f6fa}.hero-inner{max-width:960px;margin:0 auto;padding:56px 24px}
+.hero h1{font-family:"Barlow Condensed",Impact,sans-serif;font-size:2.4rem;line-height:1.1;margin:0 0 12px}
+.hero p{color:#b4bdd6;margin:0;max-width:640px}
+main{max-width:760px;margin:0 auto;padding:40px 24px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 4px 16px rgba(16,26,54,.06)}
+label{display:block;font-weight:600;margin:16px 0 6px}label:first-child{margin-top:0}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+.btn{display:inline-block;background:var(--goldl);color:var(--navy);font-weight:700;text-decoration:none;padding:12px 24px;border-radius:10px;border:0;cursor:pointer;font:inherit;margin-top:20px}
+.btn:hover{background:var(--gold);color:#fff}
+.note{color:var(--mute);font-size:.95rem;margin-top:16px}
+footer{background:var(--navy);color:#f4f6fa;text-align:center;padding:32px 24px}
+footer a{margin:0 8px;text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="index.html">MTCS <span>INC</span></a>
+<nav>
+<a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="store.html">Shop</a><a href="certifications.html">Certifications</a><a href="quote.html">Free quote</a>
+</nav>
+</div></header>
+<section class="hero"><div class="hero-inner">
+<h1>Get your free quote</h1>
+<p>Fill out your contract and quote information below. Your request goes straight to MTCS, and we will reply by phone or email.</p>
+</div></section>
+<main><div class="card">
+<!-- Form service: FormSubmit forwards this form to the primary email below,
+     with a copy (CC) to the business email.
+     The first submission sends an activation email to the primary address — it must be
+     clicked once before any quote request is forwarded. After activation FormSubmit
+     also gives a random-string alias that can replace the address in the action URL. -->
+<form action="https://formsubmit.co/multitradecustoms@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New quote request — MTCS">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_cc" value="mtcs@multitradecustoms.com">
+<input type="hidden" name="_next" value="https://multitradecustoms.com/quote-received.html">
+<label for="name">Full name *</label>
+<input id="name" name="name" placeholder="Full name" required autocomplete="name">
+<label for="phone">Phone *</label>
+<input id="phone" name="phone" type="tel" placeholder="Phone" required autocomplete="tel">
+<label for="email">Email *</label>
+<input id="email" name="email" type="email" placeholder="Email" required autocomplete="email">
+<label for="address">Job / property address *</label>
+<input id="address" name="job_address" placeholder="Street, town, state" required autocomplete="street-address">
+<label for="service">Service</label>
+<select id="service" name="service">
+<option>Build / remodel</option><option>Pressure washing</option><option>Landscaping</option>
+<option>Topiary sculpting</option><option>Snow removal</option><option>Gutter cleaning</option>
+<option>Interior graphics</option><option>Audio / visual</option><option>Several services</option>
+</select>
+<label for="work">Description of work *</label>
+<textarea id="work" name="description_of_work" placeholder="Tell us what you need done — size, area, materials, anything that helps the quote." required></textarea>
+<label for="timing">Preferred timing</label>
+<input id="timing" name="preferred_timing" placeholder="e.g. As soon as possible, next month, before winter">
+<label>How should we reply to you?</label>
+<label style="font-weight:400;margin:6px 0"><input type="radio" name="preferred_reply" value="Phone call" style="width:auto"> Phone call</label>
+<label style="font-weight:400;margin:6px 0"><input type="radio" name="preferred_reply" value="Text" style="width:auto"> Text</label>
+<label style="font-weight:400;margin:6px 0"><input type="radio" name="preferred_reply" value="Email" style="width:auto"> Email</label>
+<label for="contact">Best time to contact you</label>
+<input id="contact" name="best_time_to_contact" placeholder="e.g. Weekdays after 5pm">
+<button class="btn" type="submit">Send my quote request</button>
+</form>
+<p class="note">This is a quote request, not a booking. We will call, text, or email you within one business day — whichever way you chose above.</p>
+<p class="note">Prefer to talk first? Call or text <strong>(347) 220-5413</strong>, Mon–Sat 7am–7pm. Servicing Bronx &amp; Westchester, NY.</p>
+</div></main>
+<footer>© 2026 MTCS Inc – God's Estate. Licensed &amp; insured. License # ________<br>
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a><a href="privacy-policy.html">Privacy Policy</a><a href="recommended-tools.html">Recommended Tools</a><a href="store-policies.html">Store Policies</a><a href="gallery.html">Gallery</a><a href="certifications.html">Certifications</a><a href="givebutter.html">Givebutter</a><a href="thank-you.html">Thank you</a><a href="business-card.html">Business card</a></footer>
+<script>
+// Pre-select the service when linked as quote.html?service=Topiary sculpting
+(function(){var s=new URLSearchParams(location.search).get('service');if(!s)return;
+var el=document.getElementById('service');for(var i=0;i<el.options.length;i++){if(el.options[i].text.toLowerCase()===s.toLowerCase()){el.selectedIndex=i;break;}}})();
+</script>
+</body>
+</html>
