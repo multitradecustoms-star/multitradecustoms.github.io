@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  MTCS Inc – God's Estate — sitemap for multitradecustoms.com
+  Built Nov 6, 2026 from the live repo page list (39 HTML pages on main).
+  Excluded on purpose: quote-received.html and thank-you.html (post-conversion pages).
+  Add new pages here as they are published.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://multitradecustoms.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://multitradecustoms.com/quote.html</loc><priority>0.9</priority></url>
+  <url><loc>https://multitradecustoms.com/pricing.html</loc><priority>0.9</priority></url>
+  <url><loc>https://multitradecustoms.com/store.html</loc><priority>0.9</priority></url>
+  <url><loc>https://multitradecustoms.com/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/certifications.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/gallery.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/go.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/store-top20.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/tools-top40.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/electronics.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/recommended-tools.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/ebook.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/book.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/mtcs-donation.html</loc><priority>0.7</priority></url>
+  <url><loc>https://multitradecustoms.com/givebutter.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/business-card.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-pressure-washing.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-topiary-sculpting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-landscaping.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-snow-removal.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-gutter-cleaning.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-build-and-develop.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-deck-and-fence-carpentry.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-home-audio-visual.html</loc><priority>0.8</priority></url>
+  <url><loc>https://multitradecustoms.com/work-blueprint-review.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-crest-on-coveralls.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-crew-patch.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-crew-uniform.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-digital-site-plans.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-job-site-walk.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-poster-ascension.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-project-planning.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/work-services-banner.html</loc><priority>0.6</priority></url>
+  <url><loc>https://multitradecustoms.com/affiliate-disclosure.html</loc><priority>0.4</priority></url>
+  <url><loc>https://multitradecustoms.com/privacy-policy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://multitradecustoms.com/store-policies.html</loc><priority>0.4</priority></url>
+</urlset>
