@@ -1,0 +1,5 @@
+# MTCS Inc – God's Estate — multitradecustoms.com
+User-agent: *
+Allow: /
+
+Sitemap: https://multitradecustoms.com/sitemap.xml
