@@ -82,17 +82,17 @@
     padding:4px; border-radius:21px; background-image:var(--gold-metal);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.75), inset 0 -1px 0 rgba(70,42,0,.8), 0 28px 70px rgba(0,0,0,.68), 0 0 0 1px rgba(255,220,130,.18), 0 0 44px rgba(207,153,35,.16);
   }
-  video{width:auto; height:auto; max-width:100%; max-height:60vh; display:block; margin:0 auto; border-radius:17px; border:0; background:#000; box-shadow:inset 0 0 0 1px rgba(0,0,0,.65)}
-  .sound-cta{position:absolute; inset:auto 0 12% 0; display:flex; justify-content:center; pointer-events:none; z-index:2}
+  video{aspect-ratio:9 / 16; width:min(calc(60vh * 9 / 16), 82vw); height:auto; max-width:100%; max-height:60vh; display:block; margin:0 auto; border-radius:17px; border:0; background:#000; box-shadow:inset 0 0 0 1px rgba(0,0,0,.65)}
+  .sound-cta{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2}
   .sound-cta button{
-    pointer-events:auto; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:23px; letter-spacing:.08em;
-    color:#0B142E; background-image:var(--gold-metal); border:2px solid rgba(255,240,180,.9); border-radius:999px;
-    padding:16px 42px 14px; cursor:pointer; box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 12px 30px rgba(0,0,0,.55), 0 0 0 0 rgba(232,184,75,.55);
+    pointer-events:auto; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px; letter-spacing:.07em;
+    color:#0B142E; background-image:var(--gold-metal); border:1.5px solid rgba(255,240,180,.9); border-radius:999px;
+    padding:8px 20px 7px; cursor:pointer; box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -1px 0 rgba(90,55,0,.45), 0 8px 18px rgba(0,0,0,.5), 0 0 0 0 rgba(232,184,75,.5);
     animation:soundPulse 2.2s ease-in-out infinite;
   }
   @keyframes soundPulse{
-    0%,100%{transform:scale(1); box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 12px 30px rgba(0,0,0,.55), 0 0 0 0 rgba(232,184,75,.55)}
-    50%{transform:scale(1.045); box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 12px 30px rgba(0,0,0,.55), 0 0 26px 8px rgba(232,184,75,.40)}
+    0%,100%{transform:scale(1); box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -1px 0 rgba(90,55,0,.45), 0 8px 18px rgba(0,0,0,.5), 0 0 0 0 rgba(232,184,75,.5)}
+    50%{transform:scale(1.03); box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -1px 0 rgba(90,55,0,.45), 0 8px 18px rgba(0,0,0,.5), 0 0 14px 4px rgba(232,184,75,.35)}
   }
   @media (prefers-reduced-motion: reduce){.sound-cta button{animation:none}}
   .sound-cta button:hover{filter:brightness(1.08)}
@@ -302,7 +302,7 @@ J+gv72sWMr0GK+A+LN9+uxfbF4Lbl/8OfA2mqisXggIAAAAASUVORK5CYII=" alt="God's Estate 
 
   <div class="stage">
     <!-- Same web copy already live on the landing page: soundtrack untouched. -->
-    <video id="film" controls autoplay muted playsinline preload="auto">
+    <video id="film" width="720" height="1280" controls autoplay muted playsinline preload="auto">
       <source src="videos/mtcs-final-commercial.mp4" type="video/mp4">
       Your browser cannot play this video &mdash; <a href="index.html" style="color:#F2C200">enter the site</a> instead.
     </video>
