@@ -13,10 +13,9 @@
     --navy-deep:#0B142E;
     --pale:#F4F6FA;
     --gold:#CF9923;
-    --brown-950:#120905;
-    --brown-900:#1D0F07;
-    --brown-800:#2A170B;
-    --brown-700:#3B2110;
+    --abyss:#04081A;
+    --deep:#0A1430;
+    --surface:#1B3268;
     --gold-metal:linear-gradient(155deg,#7A4E0E 0%,#B8860B 16%,#E9C766 32%,#FFF3B0 48%,#D4AF37 62%,#8A5A13 80%,#F2D57E 100%);
     --gold-sheen:linear-gradient(105deg,rgba(255,255,255,0) 0%,rgba(255,248,205,.85) 45%,rgba(255,255,255,0) 60%);
   }
@@ -26,10 +25,11 @@
     font-family:'Barlow',sans-serif;
     color:var(--pale);
     background:
-      radial-gradient(900px 480px at 50% 8%, rgba(255,190,64,.20), rgba(255,190,64,0) 58%),
-      radial-gradient(760px 560px at 12% 88%, rgba(20,34,74,.38), rgba(20,34,74,0) 62%),
-      radial-gradient(820px 620px at 88% 80%, rgba(20,34,74,.30), rgba(20,34,74,0) 62%),
-      linear-gradient(180deg,#2A170B 0%,#1D0F07 52%,#120905 100%);
+      radial-gradient(1050px 540px at 50% -8%, rgba(150,198,255,.34), rgba(150,198,255,0) 60%),
+      radial-gradient(780px 540px at 50% 16%, rgba(70,118,205,.26), rgba(70,118,205,0) 65%),
+      radial-gradient(900px 700px at 88% 92%, rgba(3,7,22,.55), rgba(3,7,22,0) 62%),
+      radial-gradient(820px 640px at 10% 88%, rgba(3,7,22,.45), rgba(3,7,22,0) 60%),
+      linear-gradient(180deg,#1E3470 0%,#14224A 36%,#0C1734 70%,#050A1E 100%);
     min-height:100vh;
     display:flex;
     flex-direction:column;
@@ -41,13 +41,13 @@
   }
   body::before{
     content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
-    background:radial-gradient(ellipse at center, rgba(0,0,0,0) 42%, rgba(5,2,0,.38) 78%, rgba(0,0,0,.72) 100%);
+    background:radial-gradient(ellipse at center, rgba(0,0,0,0) 42%, rgba(2,6,20,.40) 78%, rgba(1,4,14,.74) 100%);
   }
   body>*{position:relative; z-index:1}
   .preview-flag{
     font-family:'Barlow Condensed',sans-serif;
     letter-spacing:.28em; font-size:12px; font-weight:700;
-    color:#2A170B; background-image:var(--gold-metal);
+    color:#0B142E; background-image:var(--gold-metal);
     border:1px solid rgba(255,240,180,.75);
     border-radius:999px; padding:5px 16px 4px; margin-bottom:20px;
     box-shadow:inset 0 1px 0 rgba(255,255,255,.8), 0 6px 18px rgba(0,0,0,.45);
@@ -71,23 +71,29 @@
   }
   .sub{margin-top:12px; font-size:clamp(15px, 2.2vw, 18px); color:rgba(244,246,250,.88); max-width:560px; text-shadow:0 1px 8px rgba(0,0,0,.55)}
   .stage{
-    position:relative; width:min(880px, 100%); margin-top:26px;
+    position:relative; width:fit-content; max-width:min(880px, 100%); margin-top:26px;
     padding:4px; border-radius:21px; background-image:var(--gold-metal);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.75), inset 0 -1px 0 rgba(70,42,0,.8), 0 28px 70px rgba(0,0,0,.68), 0 0 0 1px rgba(255,220,130,.18), 0 0 44px rgba(207,153,35,.16);
   }
-  video{width:100%; display:block; border-radius:17px; border:0; background:#000; box-shadow:inset 0 0 0 1px rgba(0,0,0,.65)}
-  .sound-cta{position:absolute; inset:auto 0 -22px 0; display:flex; justify-content:center; pointer-events:none}
+  video{width:auto; height:auto; max-width:100%; max-height:60vh; display:block; margin:0 auto; border-radius:17px; border:0; background:#000; box-shadow:inset 0 0 0 1px rgba(0,0,0,.65)}
+  .sound-cta{position:absolute; inset:auto 0 12% 0; display:flex; justify-content:center; pointer-events:none; z-index:2}
   .sound-cta button{
-    pointer-events:auto; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:19px; letter-spacing:.08em;
-    color:#2A170B; background-image:var(--gold-metal); border:1px solid rgba(255,240,180,.8); border-radius:999px;
-    padding:13px 30px 11px; cursor:pointer; box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 10px 26px rgba(0,0,0,.5);
+    pointer-events:auto; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:23px; letter-spacing:.08em;
+    color:#0B142E; background-image:var(--gold-metal); border:2px solid rgba(255,240,180,.9); border-radius:999px;
+    padding:16px 42px 14px; cursor:pointer; box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 12px 30px rgba(0,0,0,.55), 0 0 0 0 rgba(232,184,75,.55);
+    animation:soundPulse 2.2s ease-in-out infinite;
   }
+  @keyframes soundPulse{
+    0%,100%{transform:scale(1); box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 12px 30px rgba(0,0,0,.55), 0 0 0 0 rgba(232,184,75,.55)}
+    50%{transform:scale(1.045); box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 12px 30px rgba(0,0,0,.55), 0 0 26px 8px rgba(232,184,75,.40)}
+  }
+  @media (prefers-reduced-motion: reduce){.sound-cta button{animation:none}}
   .sound-cta button:hover{filter:brightness(1.08)}
   .sound-cta button:focus-visible,.btn:focus-visible,.quote:focus-visible{outline:3px solid #fff; outline-offset:3px}
-  .actions{margin-top:52px; display:flex; flex-direction:column; align-items:center; gap:14px}
+  .actions{margin-top:26px; display:flex; flex-direction:column; align-items:center; gap:14px}
   .btn{
     position:relative; overflow:hidden; display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700;
-    font-size:24px; letter-spacing:.06em; color:#2A170B; background-image:var(--gold-metal); text-decoration:none;
+    font-size:24px; letter-spacing:.06em; color:#0B142E; background-image:var(--gold-metal); text-decoration:none;
     padding:15px 52px 13px; border-radius:12px; border:1px solid rgba(255,240,180,.8);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(90,55,0,.45), 0 14px 34px rgba(0,0,0,.5);
   }
@@ -286,12 +292,12 @@ J+gv72sWMr0GK+A+LN9+uxfbF4Lbl/8OfA2mqisXggIAAAAASUVORK5CYII=" alt="God's Estate 
 
   <div class="stage">
     <!-- Same web copy already live on the landing page: soundtrack untouched. -->
-    <video id="film" controls playsinline preload="metadata">
+    <video id="film" controls autoplay muted playsinline preload="auto">
       <source src="videos/mtcs-final-commercial.mp4" type="video/mp4">
       Your browser cannot play this video &mdash; <a href="index.html" style="color:#F2C200">enter the site</a> instead.
     </video>
     <div class="sound-cta" id="soundCta">
-      <button type="button" id="soundBtn">&#128266; Watch with Sound</button>
+      <button type="button" id="soundBtn">&#128266; Tap for Sound</button>
     </div>
   </div>
 
@@ -309,17 +315,30 @@ J+gv72sWMr0GK+A+LN9+uxfbF4Lbl/8OfA2mqisXggIAAAAASUVORK5CYII=" alt="God's Estate 
     var v = document.getElementById('film');
     var wrap = document.getElementById('soundCta');
     var btn = document.getElementById('soundBtn');
+    var soundOn = false;
+    v.muted = true;
+    v.defaultMuted = true;
     v.volume = 0.25;
-    v.addEventListener('loadedmetadata', function(){ v.volume = 0.25; });
-    btn.addEventListener('click', function(){
-      v.muted = false;
+    function tryAutoplay(){
+      v.muted = true;
       v.volume = 0.25;
       var p = v.play();
       if (p && p.catch) { p.catch(function(){}); }
+    }
+    v.addEventListener('loadedmetadata', function(){ v.volume = 0.25; tryAutoplay(); });
+    tryAutoplay();
+    btn.addEventListener('click', function(){
+      soundOn = true;
+      v.muted = false;
+      v.defaultMuted = false;
+      v.volume = 0.25;
+      wrap.style.display = 'none';
+      var p = v.play();
+      if (p && p.catch) { p.catch(function(){}); }
     });
-    v.addEventListener('play', function(){ wrap.style.display = 'none'; });
+    v.addEventListener('play', function(){ if (soundOn) { wrap.style.display = 'none'; } });
     v.addEventListener('pause', function(){
-      if (v.currentTime === 0 || v.ended) { wrap.style.display = 'flex'; }
+      if (!soundOn && (v.currentTime === 0 || v.ended)) { wrap.style.display = 'flex'; }
     });
   })();
 </script>
