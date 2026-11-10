@@ -1,0 +1,1 @@
+Deploy retrigger: 2026-11-10 - fresh Pages deployment requested to publish the merged book.html fix (PR #42) after run #151 failed at deploy and its re-run stayed queued.
