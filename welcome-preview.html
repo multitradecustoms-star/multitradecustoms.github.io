@@ -52,24 +52,31 @@
     border-radius:999px; padding:5px 16px 4px; margin-bottom:20px;
     box-shadow:inset 0 1px 0 rgba(255,255,255,.8), 0 6px 18px rgba(0,0,0,.45);
   }
+  .masthead{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    width:100%; max-width:880px; margin-left:auto; margin-right:auto;
+  }
   .crest{
-    width:148px; max-width:38vw; height:auto;
+    display:block; width:148px; max-width:38vw; height:auto; margin-left:auto; margin-right:auto;
     filter:drop-shadow(0 0 18px rgba(232,184,75,.38)) drop-shadow(0 12px 28px rgba(0,0,0,.55));
   }
   h1{
-    font-family:'Barlow Condensed',sans-serif; font-weight:700;
+    font-family:'Barlow Condensed',sans-serif; font-weight:700; text-align:center;
+    width:100%; margin-left:auto; margin-right:auto;
     font-size:clamp(38px, 6.5vw, 64px); line-height:1.04; letter-spacing:.01em; margin-top:14px;
     background-image:linear-gradient(175deg,#FFF6C8 0%,#F2D57E 28%,#B8860B 52%,#FFEFA8 72%,#8A5A13 100%);
     -webkit-background-clip:text; background-clip:text; color:transparent;
     text-shadow:0 2px 0 rgba(0,0,0,.0);
   }
+  h1 .h-line{display:block; text-align:center; margin-left:auto; margin-right:auto}
   .tagline{
-    font-family:'Barlow Condensed',sans-serif; font-weight:700;
-    font-size:clamp(19px, 3.2vw, 27px); letter-spacing:.14em; margin-top:8px; text-transform:uppercase;
+    font-family:'Barlow Condensed',sans-serif; font-weight:700; text-align:center;
+    width:100%; margin-left:auto; margin-right:auto;
+    font-size:clamp(19px, 3.2vw, 27px); letter-spacing:.14em; margin-top:10px; text-transform:uppercase;
     background-image:linear-gradient(180deg,#FFF3B0 0%,#D4AF37 55%,#9A6B16 100%);
     -webkit-background-clip:text; background-clip:text; color:transparent;
   }
-  .sub{margin-top:12px; font-size:clamp(15px, 2.2vw, 18px); color:rgba(244,246,250,.88); max-width:560px; text-shadow:0 1px 8px rgba(0,0,0,.55)}
+  .sub{margin-top:12px; margin-left:auto; margin-right:auto; text-align:center; font-size:clamp(15px, 2.2vw, 18px); color:rgba(244,246,250,.88); max-width:560px; text-shadow:0 1px 8px rgba(0,0,0,.55)}
   .stage{
     position:relative; width:fit-content; max-width:min(880px, 100%); margin-top:26px;
     padding:4px; border-radius:21px; background-image:var(--gold-metal);
@@ -109,7 +116,9 @@
 <body>
   <div class="preview-flag">PREVIEW — NOT LIVE</div>
 
-  <img class="crest" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAADcCAMAAAArxuGmAAAB/lBMVEWhoZ5jYFrt3qKljV5rUyKeaiAhGRfUo1iQdlRZMA/fnSkWEwz102Xn6N4hGAi0hy7G
+  <header class="masthead">
+
+    <img class="crest" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAADcCAMAAAArxuGmAAAB/lBMVEWhoZ5jYFrt3qKljV5rUyKeaiAhGRfUo1iQdlRZMA/fnSkWEwz102Xn6N4hGAi0hy7G
 diFZboV5jqQ4TmZlThrHuJuEOwb++rQZFxRMMwr+6Wv7+bObrsP9+7f64mr/6mwaMEvapy6PYB5oWSysl1qXYR1JLQfYslD//+QYJFHeolvNnU74xTd8gXqa
 ah2ni0cXKEtKOh2tjDXGmjkYKkptWi+KeUKnmmZkXkyUe1SohTb/AAD/f3//uqj//wAAAP8+QD1AP0R/dEt/g3iCPgCIfVqGfIO3s4ebnIa9zOH/fwDMiD7B
 v8X//8MAAAAJFy8EBg8SI0ZOJwZvOAiKSA0CDSIvFwWRVg+suMf19/iKmKlzRQ6wdy6XpbX1x24VFRNpeIsBAglTNQzm6e51hJa5xNLOhzTsp1DFytKsZg9J
@@ -286,9 +295,10 @@ NxFO0s/NzZ7Apw8676l/UaYXi4Rc57CpDb2scP6g2//qQtqsWmxmLPD9t79D3x7hJKBgqKtbSK/G6U4f
 6hXgvQsRgG99uhEduKYOCg90r9rL+HV9pKShQErGRLxflwXY50Zf9tvLU36hCdkBHeC9qjfpC/px/5+vBVQh1STt301waa8rfntdChc7tEFqmjjp20h0X79+
 J+gv72sWMr0GK+A+LN9+uxfbF4Lbl/8OfA2mqisXggIAAAAASUVORK5CYII=" alt="God's Estate — MTCS Inc crest">
 
-  <h1>God&rsquo;s Estate. Built right, kept right.</h1>
-  <div class="tagline">Every trade. One call.</div>
-  <p class="sub">One crew for your whole property &mdash; press play and hear it in our own sound, then step inside.</p>
+    <h1><span class="h-line">God&rsquo;s Estate.</span><span class="h-line">Built right, kept right.</span></h1>
+    <div class="tagline">Every trade. One call.</div>
+    <p class="sub">One crew for your whole property &mdash; press play and hear it in our own sound, then step inside.</p>
+  </header>
 
   <div class="stage">
     <!-- Same web copy already live on the landing page: soundtrack untouched. -->
